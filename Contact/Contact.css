@@ -1,3 +1,41 @@
 .u-section-1 .u-sheet-1 {
   min-height: 400px;
 }
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.menu-container {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu {
+}
+
+.menu-image img {
+  height:6rem;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.menu-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.menu-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.menu-price {
+  font-size: 18px;
+  font-weight: bold;
+}
