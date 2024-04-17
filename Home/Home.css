@@ -41,7 +41,7 @@
   min-height: 311px;
 }
 
-.u-section-1 .u-image-2 {
+.u-section-1 {
   background-image: url("images/a97610021dc8cea3bdc1cdc13368b702.jpeg");
   min-height: 311px;
   background-position: 50% 50%;
@@ -980,7 +980,7 @@
 }
 
 .u-section-5 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/ad9653de83affa5857d649154b0b3764.jpeg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/makeacake.jpeg");
   background-position: 50% 91.42%;
 }
 
@@ -1312,4 +1312,10 @@
 .u-layout-col {
   display: flex;
   box-sizing: border-box;
+}
+
+.body-images {
+  display:flex;
+  height:100%;
+  width: 100%;
 }

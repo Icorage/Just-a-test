@@ -15,14 +15,18 @@ body {
 }
 
 .menu {
+  text-align: center;
 }
 
 .menu-image img {
   height:6rem;
+  width: 100%;
 }
 
 .menu-item {
   margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 .menu-title {
@@ -33,6 +37,10 @@ body {
 .menu-description {
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+.menu-description a{
+  color: black;
 }
 
 .menu-price {

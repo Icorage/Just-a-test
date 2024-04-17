@@ -19,3 +19,8 @@
   padding: 15px;
   flex-direction: column;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
