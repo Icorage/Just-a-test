@@ -19,22 +19,22 @@
             </div>
 
             <div class="input-field">
-                <input type="text" class="input" placeholder="Enter email" required>
+                <input type="text" id="email" class="input" placeholder="Enter email" required>
                 <i class="fa-solid fa-user"></i>
             </div>
 
             <div class="input-field">
-                <input type="password" class="input" placeholder="Enter Password " required>
+                <input type="password" id="password" class="input" placeholder="Enter Password " required>
                 <i class="fa-solid fa-lock"></i>
             </div>
 
             <div class="input-field">
-                <input type="password" class="input" placeholder="Repeat Password " required>
+                <input type="password" id="repassword" class="input" placeholder="Repeat Password " required>
                 <i class="fa-solid fa-lock"></i>
             </div>
 
             <div class="input-field">
-                <input type="phonenumber" class="input" placeholder="Phone Number" required>
+                <input type="phonenumber" id="phonenumber" class="input" placeholder="Phone Number" required>
                 <i class="fa-solid fa-phone"></i>
             </div>
 
@@ -45,7 +45,52 @@
         </div>
     </div>
 
-    <script src="register.js"></script>
+    <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+       
+        const firebaseConfig = {
+          apiKey: "AIzaSyB6kZEr_W83hnaH_jdc-JEeDjiYkpN9RHM",
+          authDomain: "register-example-7b295.firebaseapp.com",
+          projectId: "register-example-7b295",
+          storageBucket: "register-example-7b295.appspot.com",
+          messagingSenderId: "489589818692",
+          appId: "1:489589818692:web:56bad8b0727a667c988311"
+        };
+      
+        
+        const app = initializeApp(firebaseConfig);
+
+        import { getDatabase, ref, child, get, set, update, remove } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+
+        const db = getDatabase()
+
+        let email = document.getElementById('email');
+        let password = document.getElementById('password');
+        let repassword = document.getElementById('repassword')
+        let phonenumber = document.getElementById('phonenumber')
+        let register = document.getElementById('register');
+        
+        function AddData () {
+            set(ref(db, 'EmployeeSet/' + phonenumber.value), {
+                nameofemployee: {email: email.value, password: password.value},
+                register: register.value
+            }).then(() => {
+                alert("Data Added Succesfully")
+            }).catch(() => {
+                alert("Unsuccessful")
+                console.log(error);
+            })
+        }
+
+        if (password === repassword) {
+            
+        } else {
+           alert("Password not correct")
+        }
+
+        register.addEventListener('click', AddData)
+      </script>
 </body>
 
 </html>
