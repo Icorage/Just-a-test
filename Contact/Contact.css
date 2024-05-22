@@ -1,49 +1,46 @@
-.u-section-1 .u-sheet-1 {
-  min-height: 400px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
+.main {
+  margin: 100px;
 }
 
-.menu-container {
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title h2 {
+ text-transform:capitalize ;
+ font-size: 35px;
+ position: relative;
+ display: inline-block;
+ padding-bottom: 20px;
+ margin-bottom: 10px;
+}
+
+.section-title h2:before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #00875c;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.single-menu img {
+  width: 30%;
 }
 
 .menu {
-  text-align: center;
+ display: flex;
+ justify-content: space-between;
 }
 
-.menu-image img {
-  height:6rem;
-  width: 100%;
-}
-
-.menu-item {
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-}
-
-.menu-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.menu-description {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.menu-description a{
-  color: black;
-}
-
-.menu-price {
-  font-size: 18px;
-  font-weight: bold;
+.footer {
 }
