@@ -360,7 +360,7 @@ span.fr-img-caption.fr-view {
       float: right;
       margin: 5px 0 5px 5px;
       max-width: calc(100% - 5px); }
-/*end-commonstyles library*/@charset "UTF-8";
+    
 .u-hidden-block {
   visibility: hidden!important;
 }
@@ -21540,24 +21540,29 @@ a.pswp__share--download:hover {
 @keyframes customAnimationIn {
   from {
     transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
+    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0)
+      scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale))
+      rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
     opacity: var(--animation-custom_in-opacity);
   }
   to {
     transform-origin: center center;
-    transform: translate3d(-50% !important, -50% !important, 0);
+    transform: translate3d(-50%, -50%, 0); /* removed!important */
     opacity: 1;
   }
 }
+
 @keyframes customAnimationOut {
   from {
     transform-origin: center center;
-    transform: translate3d(-50% !important, -50% !important, 0);
+    transform: translate3d(-50%, -50%, 0); /* removed!important */
     opacity: 1;
   }
   to {
     transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
+    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0)
+      scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale))
+      rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
     opacity: var(--animation-custom_in-opacity);
   }
 }
@@ -42239,7 +42244,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-input
         {
         border-width: 1px;
-        borders: top right bottom left;
+        border: top right bottom left;
         }
         /** common-rules **/
 
